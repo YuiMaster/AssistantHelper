@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#444444</color>
+    <color name="colorAccent">#1fb288</color>
+
+    <!--水波纹-->
+    <color name="color_light_grep">#40000000</color>
+    <color name="color_white">#ffffff</color>
+
+    <!--默认APP主色调颜色-->
+    <color name="color_cyan">#1fb288</color>
+    <!--默认状态栏，底部导航栏颜色-->
+    <color name="color_fafafa">#fafafa</color>
+    <!--默认背景填充色-->
+    <color name="color_bg">#f3f3f3</color>
+    <!--默认描边颜色-->
+    <color name="color_stroke">#c3c3c3</color>
+    <!--默认分割线颜色-->
+    <color name="color_div">#b4b4b4</color>
+    <!--默认错误颜色-->
+    <color name="color_red">#f60000</color>
+    <!--默认标题颜色-->
+    <color name="color_title">#444444</color>
+    <!--默认正文颜色-->
+    <color name="color_content">#666666</color>
+    <!--默认提示语颜色-->
+    <color name="color_hint">#999999</color>
+    <!--全透明-->
+    <color name="transparent">#00000000</color>
+    <!--半透明-->
+    <color name="translucence">#80000000</color>
+    <!--深色青色-->
+    <color name="color_navy">#801fb288</color>
+    <!--黑色-->
+    <color name="color_black">#000000</color>
+
+    <!--橙红色-->
+    <color name="color_orange">#f5856e</color>
+    <!--加载框背景-->
+    <color name="color_535353">#535353</color>
+</resources>

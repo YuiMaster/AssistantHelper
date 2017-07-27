@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-200dp"
+        android:layout_marginTop="350dp"
+        android:background="@mipmap/icon_content_little_helperbackground_map"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <com.devliao.widget.ImageMainMenu
+        android:id="@+id/fdb_main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-35dp"
+        android:layout_marginTop="350dp"
+        android:background="@mipmap/icon_content_n_li_ttle_helper"
+        android:clickable="false"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <!-- submenu 1 -->
+    <include
+        android:id="@+id/ll_submenu1"
+        layout="@layout/include_assistant_submenu"></include>
+
+    <include
+        android:id="@+id/ll_submenu2"
+        layout="@layout/include_assistant_submenu"></include>
+
+    <include
+        android:id="@+id/ll_submenu3"
+        layout="@layout/include_assistant_submenu"></include>
+
+    <include
+        android:id="@+id/ll_submenu4"
+        layout="@layout/include_assistant_submenu"></include>
+</RelativeLayout>

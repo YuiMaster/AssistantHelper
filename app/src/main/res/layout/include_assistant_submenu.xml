@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="-50dp"
+    android:layout_marginTop="350dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <ImageButton
+        android:id="@+id/ib_submenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/icon_content_n_sign"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/tv_submenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_submenu"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:gravity="center_horizontal"
+        android:text="注册"
+        android:textSize="10sp" />
+</RelativeLayout>

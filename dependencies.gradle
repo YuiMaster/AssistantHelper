@@ -1,0 +1,179 @@
+ext {
+    //version
+    supportVersion = '25.2.0'
+    multidexVersion = '1.0.1'
+    retrofitVersion = '2.1.0'
+    okhttpVersion = '3.4.1'
+    okhttpCookieVersion = 'v1.0.1'
+    glideVersion = '3.7.0'
+    glideOkhttpModuleVersion = '1.4.0@aar'
+    rxVersion = '1.2.1'
+    rxLifeVersion = '0.8.0'
+    rxPermissionVersion = '0.9.1@aar'
+    fragmentationVersion = '0.10.7'
+    eventBusVersion = '3.0.0'
+    dagger2Version = '2.7'
+    activityRouterVersion = '1.2.2'
+    activityRouterAptVersion = '1.1.7'
+    okioVersion = '1.6.0'
+    aliyunOssVersion = '2.3.0'
+    loggerVersion = '2.1.1'
+    bottomBarVersion = '2.3.1'
+    tagFlowVersion = '1.0.3'
+    goodViewVersion = "1.0.0"
+    expandRecycleViewVersion = '3.0.0-RC1'
+    ijkplayerVersion = '0.8.0'
+    expandableButtonVersion = "v1.2.0"
+    nineGridViewVersion = "1.1.0"
+    boxingCoreVersion = '0.7.5'
+    ucropVersion = "2.2.0"
+    switchButtonVersion = '1.4.5'
+    ratingBarVersion = "1.1.2"
+    ssivVersion = '3.6.0'
+    buglyVersion = '2.6.5'
+    tinkerVersion = '1.7.11'
+    tinkerSdkVersion = '1.1.7'
+
+    //Packages
+    tinkerPackage = 'com.tinkerpatch.tinker'
+    tinkerSdkPackage = 'com.tinkerpatch.sdk'
+    supportPackage = 'com.android.support'
+    retrofitPackage = 'com.squareup.retrofit2'
+    okhttpPackage = 'com.squareup.okhttp3'
+    okhttpCookiePackage = 'com.github.franmontiel'
+    glidePackage = 'com.github.bumptech.glide'
+    rxPackage = 'io.reactivex'
+    rxLifePackage = 'com.trello'
+    rxPermissionPackage = 'com.tbruyelle.rxpermissions'
+    fragmentationPackage = 'me.yokeyword'
+    eventBusPackage = 'org.greenrobot'
+    dagger2Package = 'com.google.dagger'
+    activityRouterPackage = 'com.github.mzule.activityrouter'
+    okioPackage = 'com.squareup.okio'
+    aliyunOssPackage = 'com.aliyun.dpa'
+    loggerPackage = 'com.orhanobut'
+    bottomBarPackage = 'com.roughike'
+    goodViewPackage = "com.wx.goodview"
+    expandableButtonPackage = 'com.github.uin3566'
+    tagFlowPackage = 'com.zhy'
+    nineGridViewPackage = 'com.jaeger.ninegridimageview'
+    expandRecycleViewPackage = 'com.bignerdranch.android'
+    ijkplayerPackage = 'tv.danmaku.ijk.media'
+    boxingPackage = 'com.bilibili'
+    ucropPackage = 'com.yalantis'
+    ratingBarPackage = "com.hedgehog.ratingbar"
+    switchButtonPackage = 'com.kyleduo.switchbutton'
+    ssivPackage = 'com.davemorrissey.labs'
+    buglyPackage = 'com.tencent.bugly'
+
+    tinkerDependencies = [anno: buildDependency(tinkerPackage, 'tinker-android-anno', tinkerVersion)
+    ]
+
+    tinkerSdkDependencies = [sdk: buildDependency(tinkerSdkPackage, 'tinkerpatch-android-sdk', tinkerSdkVersion)
+    ]
+
+
+    supportDependencies = [design           : buildDependency(supportPackage, 'design', supportVersion),
+                           recyclerView     : buildDependency(supportPackage, 'recyclerview-v7', supportVersion),
+                           cardView         : buildDependency(supportPackage, 'cardview-v7', supportVersion),
+                           appCompat        : buildDependency(supportPackage, 'appcompat-v7', supportVersion),
+                           supportAnnotation: buildDependency(supportPackage, 'support-annotations', supportVersion),
+                           multidex         : buildDependency(supportPackage, 'multidex', multidexVersion)
+
+    ]
+
+    retrofitDependencies = [retrofit     : buildDependency(retrofitPackage, 'retrofit', retrofitVersion),
+                            gson         : buildDependency(retrofitPackage, 'converter-gson', retrofitVersion),
+                            rxAdapterJava: buildDependency(retrofitPackage, 'adapter-rxjava', retrofitVersion)
+    ]
+
+    okhttpDependencies = [okhttp       : buildDependency(okhttpPackage, 'okhttp', okhttpVersion),
+                          logInteceptor: buildDependency(okhttpPackage, 'logging-interceptor', okhttpVersion),
+                          cookie       : buildDependency(okhttpCookiePackage, 'PersistentCookieJar', okhttpCookieVersion)
+    ]
+
+    glideDependencies = [glide       : buildDependency(glidePackage, 'glide', glideVersion),
+                         okhttpModule: buildDependency(glidePackage, 'okhttp3-integration', glideOkhttpModuleVersion)
+
+    ]
+
+
+    rxDependencies = [java      : buildDependency(rxPackage, 'rxjava', rxVersion),
+                      android   : buildDependency(rxPackage, 'rxandroid', rxVersion),
+                      Permission: buildDependency(rxPermissionPackage, 'rxpermissions', rxPermissionVersion)
+    ]
+
+    rxLifeDependencies = [life      : buildDependency(rxLifePackage, 'rxlifecycle', rxLifeVersion),
+                          components: buildDependency(rxLifePackage, 'rxlifecycle-components', rxLifeVersion)
+    ]
+
+    fragmentationDependencies = [fragmentation: buildDependency(fragmentationPackage, 'fragmentation', fragmentationVersion)]
+
+
+    eventBusDependencies = [eventBus: buildDependency(eventBusPackage, 'eventbus', eventBusVersion)
+    ]
+
+    dagger2Dependencies = [dagger2 : buildDependency(dagger2Package, 'dagger', dagger2Version),
+                           compiler: buildDependency(dagger2Package, 'dagger-compiler', dagger2Version)
+    ]
+
+    activityRouterDependencies = [activityRouter: buildDependency(activityRouterPackage, 'activityrouter', activityRouterVersion),
+                                  compiler      : buildDependency(activityRouterPackage, 'compiler', activityRouterAptVersion)
+    ]
+    okioDependencies = [okio: buildDependency(okioPackage, 'okio', okioVersion)
+    ]
+    aliyunOssDependencies = [aliyunOss: buildDependency(aliyunOssPackage, 'oss-android-sdk', aliyunOssVersion)
+    ]
+
+    loggerDependencies = [logger: buildDependency(loggerPackage, 'logger', loggerVersion)
+    ]
+
+    bottomBarDependencies = [bottomBar: buildDependency(bottomBarPackage, 'bottom-bar', bottomBarVersion)
+    ]
+
+    goodViewDependencies = [goodview: buildDependency(goodViewPackage, 'goodview', goodViewVersion)
+    ]
+
+
+    expandableButtonDependencies = [expandableButton: buildDependency(expandableButtonPackage, 'AllAngleExpandableButton', expandableButtonVersion)
+    ]
+
+    tagFlowDependencies = [tagFlow: buildDependency(tagFlowPackage, 'flowlayout-lib', tagFlowVersion)
+    ]
+
+    nineGridViewDependencies = [nineGridView: buildDependency(nineGridViewPackage, 'library', nineGridViewVersion)
+    ]
+
+
+    expandRecycleViewDependencies = [expandRecycleView: buildDependency(expandRecycleViewPackage, 'expandablerecyclerview', expandRecycleViewVersion)
+    ]
+
+    ijkplayerDependencies = [java: buildDependency(ijkplayerPackage, 'ijkplayer-java', ijkplayerVersion)
+    ]
+
+    boxingDependencies = [boxingCore: buildDependency(boxingPackage, 'boxing', boxingCoreVersion)
+    ]
+
+    ucropDependencies = [ucrop: buildDependency(ucropPackage, 'ucrop', ucropVersion)
+    ]
+
+    switchButtonDependencies = [switchButton: buildDependency(switchButtonPackage, 'library', switchButtonVersion)
+    ]
+
+    ratingBarDependencies = [ratingBar: buildDependency(ratingBarPackage, 'app', ratingBarVersion)
+    ]
+
+
+    bigImageDependencies = [ssiv: buildDependency(ssivPackage, 'subsampling-scale-image-view', ssivVersion)
+
+    ]
+
+    buglyDependencies = [bugly: buildDependency(buglyPackage, 'crashreport', buglyVersion)
+
+    ]
+
+}
+
+String buildDependency(String pack, String dependency, String version) {
+    return "${pack}:${dependency}:${version}"
+}
